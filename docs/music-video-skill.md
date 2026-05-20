@@ -1,6 +1,6 @@
 # Music Video Skill
 
-Version: 1.0.0
+Version: 1.1.0
 
 A specialized extension of the gemini-omni-prompting-skill for crafting music video prompts. Grounded in outlier directorial patterns extracted from the canon of the greatest music videos ever made — not median "best practices" but the techniques that made individual videos unforgettable.
 
@@ -28,7 +28,7 @@ satellite gaining consciousness.
 
 ---
 
-### 2. The Inverted Planet / Tiny World (Dave Meyers — *HUMBLE.*, GoPro Omni)
+### 2. The Inverted Planet / Tiny World (Dave Meyers — *HUMBLE.*, GoPro Omni rig)
 
 **What it is:** A 360° rig is mounted on the vehicle/body, then the footage is inverted in post to create a "tiny planet" effect. The subject becomes god-sized above a curved miniature world beneath them.
 
@@ -72,7 +72,7 @@ distraction from the background event.
 **Prompt pattern:**
 ```
 References: Archival stills and footage of subject from [YEAR_RANGE] provided as reference.
-Style: Intercutcut present-tense performance (desaturated, high contrast, ambient available
+Style: Intercut present-tense performance (desaturated, high contrast, ambient available
 light) with archival images (slightly sped up, grain added to match era). Cut on emotional
 peak not on musical beat. The edit rhythm is breathing, not metronomic.
 ```
@@ -98,9 +98,9 @@ Style: Handmade world. Every frame should feel like a diorama that someone actua
 
 ---
 
-### 6. The Choreographic Detonation (Spike Jonze — Fatboy Slim, *Praise You* / Beyoncé, *Single Ladies*)
+### 6. The Choreographic Detonation (Jake Nava — Beyoncé, *Single Ladies* / Spike Jonze — Fatboy Slim, *Praise You*)
 
-**What it is:** A single unbroken performance space — no cuts or minimal cuts — where the choreography IS the video. The camera is complicit, not dominant. It holds wide, lets the bodies work, and punches in only at peak moments. *Single Ladies* was shot in 3 hours, intentionally lo-fi, with dance as the entire language.
+**What it is:** A single unbroken performance space — no cuts or minimal cuts — where the choreography IS the video. The camera is complicit, not dominant. It holds wide, lets the bodies work, and punches in only at peak moments. *Single Ladies* (dir. Jake Nava) was shot in a single black-and-white take, Bob Fosse-inflected, with the camera locked on a wide that trusted the body completely. Jonze's *Praise You* took the same restraint into guerrilla-style public performance.
 
 **Gemini Omni axis:** `action`, `camera_motion`, `framing`
 
@@ -152,9 +152,11 @@ Camera motion: Static. The space is the subject. The person passes through it.
 
 ---
 
-### 9. The J. Cole Raw Documentary (Fall-Off era — *The Fall-Off is Inevitable*, Dir. Hans Maharawal)
+### 9. The Unguarded Documentary (J. Cole — *Might Delete Later* era / *The Fall-Off* campaign)
 
-**What it is:** No concept, no set. The artist in their natural environment — studio, neighborhood, family moments — but shot with cinematic intentionality. Handheld intimacy with photographic composition. The "documentary" label is a flex: "the realness is the video." Cole's *Fall-Off* era videos treat the rehearsal as the performance.
+**What it is:** No concept, no set. The artist moves through their actual world — studio, neighborhood, practice sessions — but the cinematography is intentional. The "no-video" is the video. What separates this from vlog footage is the eye: every shot is composed. Available light is chosen, not tolerated. The camera catches rather than directs. Cole's *Might Delete Later* and *Fall-Off* visuals treat the rehearsal as the performance and the process as the content.
+
+**The grammar of this pattern:** The camera never asks the artist to do anything twice. If a moment passes, it passes. The edit is built from what actually happened.
 
 **Gemini Omni axis:** `style`, `action`, `environment`
 
@@ -163,14 +165,18 @@ Camera motion: Static. The space is the subject. The person passes through it.
 Style: Observational documentary aesthetic. Handheld, available light, ambient sound bleeds.
 No costume changes — artist in their actual clothing for the day. Cinematography is
 opportunistic but composed: the camera catches moments, doesn't stage them.
-Environment: Actual location meaningful to the artist — not a rented set.
-Action: Artist exists in the space — not performing to camera. Performance emerges from
+Environment: Location that is genuinely meaningful to the artist — not a rented set.
+Action: Artist exists in the space, not performing to camera. Performance emerges from
 the environment's logic. If they're in a gym, they're actually working out.
+Constraints: No second takes. No directed eyelines. If the artist looks at the camera,
+leave it in.
 ```
+
+**When to deploy:** Songs where authenticity is the thesis. Artists whose actual life is more interesting than any concept.
 
 ---
 
-### 10. The Structural Rupture (Kanye / Hype Williams — *Stronger*, Daft Punk)
+### 10. The Structural Rupture (Hype Williams — Kanye West, *Stronger*)
 
 **What it is:** The video begins in one genre and breaks into another. *Stronger* opens as a neo-noir anime homage (*Akira*), then ruptures into pure performance. The rupture is the statement — two aesthetics collide without smoothing the seam.
 
@@ -181,7 +187,7 @@ the environment's logic. If they're in a gym, they're actually working out.
 Structure: Video operates in two movements.
 Movement 1 (0:00–[TIMESTAMP]): [STYLE A — cinematic, narrative, world-building].
 Movement 2 ([TIMESTAMP]–end): [STYLE B — raw performance, minimal environment].
-The transition is a cut, not a fade. No bridge. The viewer feels the seam.
+The transition is a hard cut, not a fade. No bridge. The viewer feels the seam.
 Style A and Style B should be maximally distinct — different aspect ratio, color grade,
 camera grammar. The rupture is the thesis.
 ```
@@ -190,7 +196,7 @@ camera grammar. The rupture is the thesis.
 
 ### 11. The Hyperreal Tableau (Melina Matsoukas — Beyoncé, *Formation* / Kendrick, *Poetic Justice*)
 
-**What it is:** Each shot is composed as a painting — deep depth of field, precise symmetry or deliberate off-axis imbalance, costumes as iconography. The video is a series of tableaux that individually feel like album covers. No shot is wasted. Every frame is extractable as a standalone image.
+**What it is:** Each shot is composed as a painting — precise symmetry or deliberate off-axis imbalance, costumes as iconography. The video is a series of tableaux that individually work as standalone images. No shot is wasted. Every frame is extractable as an album cover.
 
 **Gemini Omni axis:** `shot_framing`, `style`, `lighting`
 
@@ -200,25 +206,25 @@ Framing: Painterly composition. Every shot should function as a standalone photo
 Use the rule of thirds aggressively — subjects at extreme left or right, horizon low
 or high, never centered unless for deliberate confrontational symmetry.
 Lighting: Chiaroscuro. One dominant light source, deep shadows, no fill to flatten.
-Style: Costumes carry visual weight as iconography. Color palette is limited to 3 hues
+Style: Costumes carry visual weight as iconography. Color palette limited to 3 hues
 per shot. Backgrounds are architecturally significant, not neutral.
 ```
 
 ---
 
-### 12. The Infinite Corridor / Spatial Impossibility (Spike Jonze — Being John Malkovich aesthetic / various)
+### 12. The Spatial Impossibility (Spike Jonze / Michel Gondry — physical set construction)
 
-**What it is:** The space the video occupies doesn't obey architecture. Corridors lead back to themselves. Rooms contain other rooms. The artist walks through a door and is somewhere physically impossible. Gondry and Jonze both built physical sets that created optical impossibilities — no CGI.
+**What it is:** The space the video occupies doesn't obey architecture. Corridors lead back to themselves. Rooms contain other rooms. The artist walks through a door and arrives somewhere physically impossible. Both Gondry and Jonze built physical sets to achieve this — no CGI. The wrongness is structural, not digital.
 
 **Gemini Omni axis:** `environment`, `style`
 
 **Prompt pattern:**
 ```
 Environment: Space that violates spatial logic. [EXAMPLE: Hallway that curves back on
-itself. Room whose ceiling is another floor. Exterior of a building that contains an
-interior larger than its exterior allows.] The impossibility is revealed gradually —
+itself. Room whose ceiling is another floor. Exterior of a building whose interior
+is larger than its exterior allows.] The impossibility is revealed gradually —
 not announced upfront.
-Style: Photorealistic rendering. The impossible space looks totally physical — no
+Style: Photorealistic rendering. The impossible space looks completely physical — no
 digital glow, no distortion effects. The wrongness is architectural, not visual.
 ```
 
@@ -233,7 +239,7 @@ These extend the base skill's `mode` parameter:
 - `storyboard_mv` — Convert a track structure (verse/hook/bridge) into timed scene shots
 - `rewrite_mv_camera` — Reconstruct the camera grammar of an existing prompt
 - `fuse_mv_references` — Blend visual references from multiple directors into one coherent aesthetic
-- `director_voice` — Adopt the grammar of a specific director (Meyers, Murai, Gondry, Matsoukas, Milk, Romanek, Jonze, Hype Williams) as the prompt's lens
+- `director_voice` — Adopt the grammar of a specific director (Meyers, Murai, Gondry, Matsoukas, Milk, Romanek, Jonze, Nava, Hype Williams) as the prompt's lens
 
 ---
 
@@ -276,7 +282,7 @@ Optional:
 
 **The rupture rule:** Every music video should contain at least one moment that breaks its own grammar — a beat where the visual logic resets. Identify where this rupture should land and build toward it.
 
-**Director as constraint:** When `director_voice` is specified, all other axes must be compatible with that director's known grammar. A Gondry prompt should never include robotic precision. A Murai prompt should never have rapid intercutting.
+**Director as constraint:** When `director_voice` is specified, all other axes must be compatible with that director's known grammar. A Gondry prompt should never include robotic precision. A Murai prompt should never have rapid intercutting. A Nava prompt trusts wide frames and withholds the close-up.
 
 ---
 
@@ -308,62 +314,11 @@ Constraints: {constraints}
 
 ---
 
-## Example Prompts
-
-### Example 1 — Pattern: Robotic Precision Pan, Director Voice: Dave Meyers
-
-```
-Goal: Verse 2 of a trap track about control. Artist seated at a long table, alone.
-Track section: Verse 2 (bars 17–32)
-BPM: 140
-
-Pattern: Robotic Precision Pan
-Director voice: Dave Meyers
-
-Subject: Male artist, 20s, seated at the center of an 8-person table, dressed in white.
-Environment: Baroque dining hall. Empty chairs. Candles. Deep shadows.
-Action: Artist does not move. Delivers bars with minimal facial expression.
-Style: Caravaggio reference — single warm directional key light from camera-left,
-everything else swallowed by shadow. No fill. No ambient.
-Lighting: Candlelight-temperature practical sources only. No LEDs.
-Framing: Medium wide. Full table visible. Artist at geometric center of frame.
-Camera motion: 6-axis robotic arm executes a 180° arc over 8 bars,
-starting at camera-left profile and landing at camera-right profile.
-Constant speed — no ease-in or ease-out. Mechanical. Sovereign.
-Beat anchor: Bar 24 (drop) — camera is directly facing artist at this exact moment.
-Constraints: No cuts during camera move. Single continuous take for entire verse.
-```
-
-### Example 2 — Pattern: Fragmented Self, Director Voice: Hiro Murai
-
-```
-Goal: Chorus of a soul track about duality. Two versions of the artist coexist.
-Track section: Chorus (bars 33–48)
-BPM: 92
-
-Pattern: Fragmented Self
-Director voice: Hiro Murai
-
-Subject: Female artist, 30s, appearing as two simultaneous versions of herself.
-Environment A: Empty swimming pool, afternoon, Los Angeles.
-Environment B: Dense forest, overcast, Pacific Northwest.
-Action: Version A dances slowly in the pool. Version B stands still and watches something
-offscreen. They never acknowledge each other.
-Style: Color grade diverges. Space A — bleached cyan and white, overexposed.
-Space B — desaturated green-brown, crushed blacks.
-Framing: Both spaces use medium shots. Same lens. Same distance to subject.
-Camera motion: Locked. No movement in either space. The stillness makes the cut feel violent.
-Beat anchor: Hook word "both" — cut between spaces on this syllable every time it occurs.
-Constraints: No CGI doubles. The two versions are never in the same frame.
-```
-
----
-
 ## Source Boundary
 
 | Layer | Source |
 |---|---|
 | Camera technique analysis | Original synthesis from top-37 music video canon |
-| Directorial grammar | Dave Meyers, Hiro Murai, Spike Jonze, Michel Gondry, Mark Romanek, Melina Matsoukas, Chris Milk, Hype Williams, Director X — public interviews and visual analysis |
+| Directorial grammar | Dave Meyers, Hiro Murai, Spike Jonze, Michel Gondry, Mark Romanek, Melina Matsoukas, Chris Milk, Hype Williams, Jake Nava, Director X — public interviews and visual analysis |
 | Gemini Omni prompt structure | Extends base skill (SKILL.md) without reproducing source text verbatim |
 | Beat-anchoring framework | Original extension for music video temporal specificity |
